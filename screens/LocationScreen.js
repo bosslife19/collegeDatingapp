@@ -5,6 +5,8 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import MapView, { Marker } from "react-native-maps";
 import * as Location from "expo-location";
 import { useNavigation } from "@react-navigation/native";
+import {GOOGLE_API_KEY} from '@env'
+
 
 const LocationScreen = () => {
   const [location, setLocation] = useState("");
@@ -42,7 +44,7 @@ const LocationScreen = () => {
      
       setRegion({ ...region, latitude, longitude });
       fetch(
-        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude}, ${longitude}&key=AIzaSyBrnYlsmSXdyxSCdY2RzQtQ30E9ABYuAI8`
+        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude}, ${longitude}&key=${GOOGLE_API_KEY}`
       )
         .then((res) => res.json())
         .then((data) => {
