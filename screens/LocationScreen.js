@@ -44,7 +44,7 @@ const LocationScreen = () => {
      
       setRegion({ ...region, latitude, longitude });
       fetch(
-        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude}, ${longitude}&key=${GOOGLE_API_KEY}`
+        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude}, ${longitude}&key=`
       )
         .then((res) => res.json())
         .then((data) => {

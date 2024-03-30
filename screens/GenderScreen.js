@@ -60,7 +60,7 @@ const GenderScreen = () => {
           genders after
         </Text>
 
-        <View style={{ marginTop: 30 }}>
+        <View style={{ marginTop: 30,  gap:12 }}>
           <View
             style={{
               flexDirection: "row",
@@ -97,7 +97,7 @@ const GenderScreen = () => {
           </View>
         </View>
         <View style={{marginTop:30, flexDirection:'row', alignItems:'center', gap:8}}>
-          <AntDesign name='checksquare' size={26} color={gender && '#581845'}/>
+          <AntDesign name='checksquare' size={26} color= '#581845'/>
           <Text style={{fontSize:15}}>Visible on profile</Text>
         </View>
 
