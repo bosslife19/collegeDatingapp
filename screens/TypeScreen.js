@@ -69,7 +69,7 @@ const TypeScreen = () => {
           </View>
 
           <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between'}}>
-            <Text style={{fontSize:15}}>Straightsss</Text>
+            <Text style={{fontSize:15}}>Straightsssdddd</Text>
             <TouchableOpacity onPress={() => setType("Straight")}>
               <FontAwesome
                 name="circle"
